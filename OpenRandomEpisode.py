@@ -11,9 +11,13 @@ Hemil Shah
 import os
 import random
 import sys
+from Tkinter import Tk
+from tkFileDialog import askdirectory
 
+Tk().withdraw() # we don't want a full GUI, so keep the root window from appearing
+filename = askdirectory() # show an "Open" dialog box and return the path to the selected file
+root = filename
 
-root = "Z:\\Theatre"
 li = []
 for path, subdirs, files in os.walk(root):
     for name in files:
