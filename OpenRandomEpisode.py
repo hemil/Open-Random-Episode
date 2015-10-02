@@ -14,19 +14,6 @@ import sys
 from Tkinter import Tk
 from tkFileDialog import askdirectory
 
-'''
-For TV shows which can be seen over and over again.
-Selects a Random Episode and starts to play it.
-
-Hemil Shah
-'''
-
-import os
-import random
-import sys
-from Tkinter import Tk
-from tkFileDialog import askdirectory
-
 Tk().withdraw() # we don't want a full GUI, so keep the root window from appearing
 filename = askdirectory() # show an "Open" dialog box and return the path to the selected file
 root = filename
